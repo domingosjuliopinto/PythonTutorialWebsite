@@ -1,0 +1,86 @@
+from django import forms
+import pymysql
+import datetime
+from app import globals
+import smtplib
+from email.message import EmailMessage
+from email.mime.text import MIMEText
+
+class QuizForm(forms.Form):
+    email = forms.EmailField(max_length=30)
+    q1 = forms.CharField(max_length=20 , help_text="Which GUI was explained in detailed?")
+    q2 = forms.CharField(max_length=20 , help_text="z=5 followed by z='JOHN' , what will be stored in z?")
+    q3 = forms.CharField(max_length=20 , help_text="[ ] creates what?")
+    q4 = forms.CharField(max_length=20 , help_text="Class that inherits functionality from the parent is known as?")
+    q5 = forms.CharField(max_length=20 , help_text="When class definition is empty we put which statement to avoid error?")
+
+
+    def clean(self):
+        cleaned_data = super(QuizForm, self).clean()
+        email = cleaned_data.get('email')
+        q1 = cleaned_data.get('q1')
+        q2 = cleaned_data.get('q2')
+        q3 = cleaned_data.get('q3')
+        q4 = cleaned_data.get('q4')
+        q5 = cleaned_data.get('q5')
+        if not email and not q1 and not q2 and not q3 and not q4 and not q5:
+            raise forms.ValidationError('You have to type one word answer')
+        else:
+            globals.initialize()
+            cq1 = str(q1).upper()
+            cq3 = str(q3).upper()
+            cq4 = str(q4).upper()
+            cq5 = str(q5).upper()
+
+            if cq1 == "TKINTER":
+                globals.t+=1
+            
+            if q2 == "JOHN":
+                globals.t+=1
+            
+            if cq3 == "LIST":
+                globals.t+=1
+            
+            if cq4 == "CHILD":
+                globals.t+=1
+
+            if cq5 == "PASS":
+                globals.t+=1
+            
+            tot = globals.t
+            d = datetime.date.today()
+
+            connection=pymysql.connect(
+            host="localhost",
+            user="root",
+            db="ppmp" #Change the name according to your xampp mysql db
+            )
+
+            cur=connection.cursor()
+            s="insert into quiz(email_id, q1, q2, q3, q4, q5, correct, qdate) values ('%s','%s','%s','%s','%s','%s','%d','%s')"
+            args=(email,q1,q2,q3,q4,q5,tot,d)
+            cur.execute(s%args)        
+            connection.commit()
+            connection.close()
+
+            str_tot=str(tot)
+
+            body="""
+                  You scored """+str_tot+"""/5 in your quiz that you attempted on King Julien's Python of Madagascar Tutorial Site.
+                  You Entered """+q1+""" for Q1 """+q2+""" for Q2 """+q3+""" for Q3 """+q4+""" for Q4 """+q5+""" for Q5
+                  The correct answers are Tkinter, JOHN , List , Child , Pass 
+    
+                  Greetings King Julien
+                """
+            msg=MIMEText(body)
+            fromaddr="" # your email here
+            toaddr=email
+            msg['From']=fromaddr
+            msg['To']=toaddr
+            msg['Subject']="Your Quiz Result"
+            serv=smtplib.SMTP('smtp.gmail.com',587)
+            serv.starttls()
+            serv.login(fromaddr," ") # your security code (Gmail Application-Specific Password) in the space 
+            serv.send_message(msg)
+            print("mail sent")
+            serv.quit()

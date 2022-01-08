@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .about{
+        height: auto;
+        width: 1000px;
+        background-color: white;
+        text-align: center;
+        transform: translateX(25%);
+      }
+
+      .about p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hrowb">
+      <div class="img1">
+        <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+      </div>
+      <div class="img2">
+        <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+      </div>
+      <h4>King Julien's</h4><h1>Python of Madagascar</h1>
+      <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+      <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+      <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+      <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+            <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+            <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+            <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+            <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+            <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+            <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+            <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+            <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+            <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+        </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px" style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+      <br>
+      <h1>Variables & Type Casting</h1><br>
+      <h3>Variables</h3>
+      <p>
+        Python has no command for declaring a variable.<br>
+        A variable is created the moment you first assign a value to it.<br>
+        Variables do not need to be declared with any particular type,<br>
+        and can even change type after they have been set.<br> #check eg 1.<br>
+        <br>
+        Variable names are case-sensitive.<br> i.e variable 'A' wont overwrite variable 'a'<br> #check eg 2.<br>
+        <br> 
+        String variables can be declared either by using single or double quotes <br> i.e x = 'john' is same as x = "john"
+      </p>
+      <br>
+      <iframe src="https://trinket.io/embed/python3/12d634768b" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      <br><br>
+      <h3>Type Casting</h3>
+      <p>
+        There may be times when you want to specify a type on to a variable.<br>
+        This can be done with casting. Python is an object-orientated language,<br>
+        and as such it uses classes to define data types, including its primitive types.<br>
+        Casting in python is therefore done using constructor functions:<br>
+        int() - <br> 
+        an integer number from an integer literal, a float literal (by removing all decimals),<br> 
+        or a string literal (providing the string represents a whole number)<br>
+        float() - <br>
+        constructs a float number from an integer literal, a float literal<br>
+        or a string literal (providing the string represents a float or an integer)<br>
+        str() -<br> 
+        constructs a string from a wide variety of data types,<br>
+        including strings, integer literals and float literals<br>
+        <br>
+        You can get the data type of a variable with the type() function<br>eg. print(type(x))<br>
+        #check example below
+      </p>
+      <br>
+      <iframe src="https://trinket.io/embed/python3/257d13c679" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+    </body>
+</html>

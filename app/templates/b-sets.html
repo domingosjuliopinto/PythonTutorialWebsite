@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .about {
+            height: auto;
+            width: 1000px;
+            background-color: white;
+            text-align: center;
+            transform: translateX(25%);
+        }
+
+        .about p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrowb">
+        <div class="img1">
+            <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+        </div>
+        <div class="img2">
+            <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+        </div>
+        <h4>King Julien's</h4>
+        <h1>Python of Madagascar</h1>
+        <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+        <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+        <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+        <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+            <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+            <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+            <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+            <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+            <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+            <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+            <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+            <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+            <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+        </ul>
+        <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px"
+            style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+        <br>
+        <div class="container">
+            <div class="text-justify">
+                <h2>Python Sets</h2>
+                <h2>Set</h2>
+                <p>Sets are used to store multiple items in a single variable.</p>
+                <p>Set is one of 4 built-in data types in Python used to store collections of data, the other 3
+                    are&nbsp;<a href="https://www.w3schools.com/python/python_lists.asp">List</a>,&nbsp;<a
+                        href="https://www.w3schools.com/python/python_tuples.asp">Tuple</a>, and&nbsp;<a
+                        href="https://www.w3schools.com/python/python_dictionaries.asp">Dictionary</a>, all with
+                    different qualities and usage.</p>
+                <p>A set is a collection which is both&nbsp;<em>unordered</em>&nbsp;and&nbsp;<em>unindexed</em>.</p>
+                <p>Sets are written with curly brackets.</p>
+                <h3>Example</h3>
+                <p>Create a Set:</p>
+                <p>thisset = {"apple",&nbsp;"banana",&nbsp;"cherry"}<br /> print(thisset)</p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>Note:</strong>&nbsp;Sets are unordered, so you cannot be sure in which order the items will
+                    appear.</p>
+                <h2>Set Items</h2>
+                <p>Set items are unordered, unchangeable, and do not allow duplicate values.</p>
+                <h2>Unordered</h2>
+                <p>Unordered means that the items in a set do not have a defined order.</p>
+                <p>Set items can appear in a different order every time you use them, and cannot be referred to by index
+                    or key.</p>
+                <h2>Unchangeable</h2>
+                <p>Sets are unchangeable, meaning that we cannot change the items after the set has been created.</p>
+                <p>Once a set is created, you cannot change its items, but you can add new items.</p>
+                <h2>Duplicates Not Allowed</h2>
+                <p>Sets cannot have two items with the same value.</p>
+                <h3>Example</h3>
+                <p>Duplicate values will be ignored:</p>
+                <p>thisset = {"apple",&nbsp;"banana",&nbsp;"cherry",&nbsp;"apple"}<br /> <br /> print(thisset)</p>
+                <h2>Get the Length of a Set</h2>
+                <p>To determine how many items a set has, use the&nbsp;len()&nbsp;method.</p>
+                <h3>Example</h3>
+                <p>Get the number of items in a set:</p>
+                <p>thisset = {"apple",&nbsp;"banana",&nbsp;"cherry"}<br /> <br /> print(len(thisset))</p>
+                <h2>Set Items - Data Types</h2>
+                <p>Set items can be of any data type:</p>
+                <h3>Example</h3>
+                <p>String, int and boolean data types:</p>
+                <p>set1 = {"apple",&nbsp;"banana",&nbsp;"cherry"}<br /> set2 = {1,&nbsp;5,&nbsp;7,&nbsp;9,&nbsp;3}<br />
+                    set3 = {True,&nbsp;False,&nbsp;False}</p>
+                <p>A set can contain different data types:</p>
+                <h3>Example</h3>
+                <p>A set with strings, integers and boolean values:</p>
+                <p>set1 = {"abc",&nbsp;34,&nbsp;True,&nbsp;40,&nbsp;"male"}</p>
+                <h2>type()</h2>
+                <p>From Python's perspective, sets are defined as objects with the data type 'set':</p>
+                <p>&lt;class 'set'&gt;</p>
+                <h3>Example</h3>
+                <p>What is the data type of a set?</p>
+                <p>myset = {"apple",&nbsp;"banana",&nbsp;"cherry"}<br /> print(type(myset))</p>
+                <h2>The set() Constructor</h2>
+                <p>It is also possible to use the&nbsp;set()&nbsp;constructor to make a set.</p>
+                <h3>Example</h3>
+                <p>Using the set() constructor to make a set:</p>
+                <p>thisset = set(("apple",&nbsp;"banana",&nbsp;"cherry"))&nbsp;# note the double round-brackets<br />
+                    print(thisset)</p>
+            </div>
+
+            <br>
+            <iframe src="https://trinket.io/embed/python3/2fa0a70b55" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <br><br>
+
+
+        </div>
+        <img src="../static/images/kjm.png" alt="kjm" width="500" height="400"
+            style="transform: translate(1000px,-150px);">
+</body>
+
+</html>

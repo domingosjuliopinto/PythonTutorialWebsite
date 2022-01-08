@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .about{
+        height: auto;
+        width: 1000px;
+        background-color: white;
+        text-align: center;
+        transform: translateX(25%);
+      }
+
+      .about p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hrowb">
+      <div class="img1">
+        <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+      </div>
+      <div class="img2">
+        <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+      </div>
+      <h4>King Julien's</h4><h1>Python of Madagascar</h1>
+      <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+      <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+      <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+      <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+          <li><a href="/clasobj"><i class="fas fa-font"></i>Class & <br> Objects</a></li>
+          <li><a href="/modules"><i class="fas fa-database"></i>Modules</a></li>
+          <li><a href="/inherit"><i class="fas fa-stream"></i>Inheritance</a></li>
+          <li><a href="/filehand"><i class="fas fa-list"></i>File Handling</a></li>
+          <li><a href="/gui"><i class="fas fa-book"></i>GUI</a></li>
+          <li><a href="/polymor"><i class="fas fa-rainbow"></i>Polymorphism</a></li>
+        </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px" style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+      <br>
+      <h1>Inheritance</h1><br>
+      <p>
+        Inheritance allows us to define a class that inherits all the methods and properties from another class. <br>
+        Parent class is the class being inherited from, also called base class. <br>
+        Child class is the class that inherits from another class, also called derived class. <br>
+      </p>
+      <br>
+      <h2>Create a Parent Class</h2>
+      <p>
+        Any class can be a parent class, so the syntax is the same as creating any other class:
+      </p>
+      <br>
+      <h2>Create a Child Class</h2>
+      <p>
+        To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child class:
+      </p>
+      <br>
+      <h2>Add the __init__() Function</h2>
+      <p>
+        So far we have created a child class that inherits the properties and methods from its parent. <br>
+		We want to add the __init__() function to the child class (instead of the pass keyword). <br>
+		Note: The __init__() function is called automatically every time the class is being used to create a new object.
+      </p>
+      <br>
+      <br>
+      <h2>Use the super() Function</h2>
+      <p>
+        Python also has a super() function that will make the child class inherit all the methods and properties from its parent:
+      </p>
+      <br>
+      </p>
+      <iframe src="https://trinket.io/embed/python3/fb658ef093" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+    </body>
+</html>

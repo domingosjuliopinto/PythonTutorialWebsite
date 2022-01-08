@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .about{
+        height: auto;
+        width: 1000px;
+        background-color: white;
+        text-align: center;
+        transform: translateX(25%);
+      }
+
+      .about p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hrowb">
+      <div class="img1">
+        <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+      </div>
+      <div class="img2">
+        <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+      </div>
+      <h4>King Julien's</h4><h1>Python of Madagascar</h1>
+      <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+      <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+      <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+      <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+          <li><a href="/clasobj"><i class="fas fa-font"></i>Class & <br> Objects</a></li>
+          <li><a href="/modules"><i class="fas fa-database"></i>Modules</a></li>
+          <li><a href="/inherit"><i class="fas fa-stream"></i>Inheritance</a></li>
+          <li><a href="/filehand"><i class="fas fa-list"></i>File Handling</a></li>
+          <li><a href="/gui"><i class="fas fa-book"></i>GUI</a></li>
+          <li><a href="/polymor"><i class="fas fa-rainbow"></i>Polymorphism</a></li>
+        </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px" style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+      <br>
+      <h1>Python Polymorphism</h1><br>
+      <p>
+      The word polymorphism means having many forms.
+      In programming, polymorphism means same function name (but different signatures) being uses for different types.<br>
+      Polymorphism can exist as inbuilt or user-defined.
+      </p>
+      <br>
+      <h2 align = "left">Polymorphism with Class Methods</h2>
+      <p align = "left">
+        Polymorphism shows how python can use two different class types, in the same way.
+        We create a for loop that iterates through a tuple of objects.
+        Then call the methods without being concerned about which class type each object is.
+        We assume that these methods actually exist in each class.
+      </p>
+      <br>
+      <h2 align = "left">Polymorphism with Inheritance</h2>
+      <p align = "left">
+        In Python, Polymorphism lets us define methods in the child class that have the same name as the methods in the parent class.
+        In inheritance, the child class inherits the methods from the parent class. However, it is possible to modify a method in a child class that it has inherited from the parent class. This is particularly useful in cases where the method inherited from the parent class doesn’t quite fit the child class. In such cases, we re-implement the method in the child class. This process of re-implementing a method in the child class is known as Method Overriding.
+      </p>
+      <br>
+      <h2 align = "left">Polymorphism with Functions and Objects</h2>
+      <p align = "left">
+        It is also possible to create a function that can take any object, allowing for polymorphism
+      </p>
+      <br>
+      <iframe src="https://trinket.io/embed/python3/c8e4d9d73c" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+    </body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .about {
+            height: auto;
+            width: 1000px;
+            background-color: white;
+            text-align: center;
+            transform: translateX(25%);
+        }
+
+        .about p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrowb">
+        <div class="img1">
+            <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+        </div>
+        <div class="img2">
+            <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+        </div>
+        <h4>King Julien's</h4>
+        <h1>Python of Madagascar</h1>
+        <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+        <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+        <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+        <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+            <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+            <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+            <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+            <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+            <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+            <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+            <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+            <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+            <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+        </ul>
+        <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px"
+            style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+        <br>
+        <div class="container">
+            <div class="text-justify">
+                <h1>Python Loops</h1>
+                <h1>&nbsp;If ... Else</h1>
+                <h2>Python Conditions and If statements</h2>
+                <p>Python supports the usual logical conditions from mathematics:</p>
+                <ul>
+                    <li>Equals:&nbsp;a == b</li>
+                    <li>Not Equals:&nbsp;a != b</li>
+                    <li>Less than:&nbsp;a &lt; b</li>
+                    <li>Less than or equal to:&nbsp;a &lt;= b</li>
+                    <li>Greater than:&nbsp;a &gt; b</li>
+                    <li>Greater than or equal to:&nbsp;a &gt;= b</li>
+                </ul>
+                <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+                <p>An "if statement" is written by using the&nbsp;if&nbsp;keyword.</p>
+                <h3>Example</h3>
+                <p>If statement:</p>
+                <p>a =&nbsp;33<br /> b =&nbsp;200<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than a")
+                </p>
+                <p>In this example we use two variables,&nbsp;a&nbsp;and&nbsp;b, which are used as part of the if
+                    statement to test whether&nbsp;b&nbsp;is greater than&nbsp;a. As&nbsp;a&nbsp;is&nbsp;33,
+                    and&nbsp;b&nbsp;is&nbsp;200, we know that 200 is greater than 33, and so we print to screen that "b
+                    is greater than a".</p>
+                <h2>Indentation</h2>
+                <p>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code.
+                    Other programming languages often use curly-brackets for this purpose.</p>
+                <h3>Example</h3>
+                <p>If statement, without indentation (will raise an error):</p>
+                <p>a =&nbsp;33<br /> b =&nbsp;200<br /> if&nbsp;b &gt; a:<br /> print("b is greater than a")&nbsp;# you
+                    will get an error</p>
+                <h2>Elif</h2>
+                <p>The&nbsp;elif&nbsp;keyword is pythons way of saying "if the previous conditions were not true, then
+                    try this condition".</p>
+                <h3>Example</h3>
+                <p>a =&nbsp;33<br /> b =&nbsp;33<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than
+                    a")<br /> elif&nbsp;a == b:<br /> &nbsp;&nbsp;print("a and b are equal")</p>
+                <p>In this example&nbsp;a&nbsp;is equal to&nbsp;b, so the first condition is not true, but
+                    the&nbsp;elif&nbsp;condition is true, so we print to screen that "a and b are equal".</p>
+                <h2>Else</h2>
+                <p>The&nbsp;else&nbsp;keyword catches anything which isn't caught by the preceding conditions.</p>
+                <h3>Example</h3>
+                <p>a =&nbsp;200<br /> b =&nbsp;33<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than
+                    a")<br /> elif&nbsp;a == b:<br /> &nbsp;&nbsp;print("a and b are equal")<br /> else:<br />
+                    &nbsp;&nbsp;print("a is greater than b")</p>
+                <p>In this example&nbsp;a&nbsp;is greater than&nbsp;b, so the first condition is not true, also
+                    the&nbsp;elif&nbsp;condition is not true, so we go to the&nbsp;else&nbsp;condition and print to
+                    screen that "a is greater than b".</p>
+                <p>You can also have an&nbsp;<em>else</em>&nbsp;without the&nbsp;<em>elif</em>:</p>
+                <h3>Example</h3>
+                <p>a =&nbsp;200<br /> b =&nbsp;33<br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;print("b is greater than
+                    a")<br /> else:<br /> &nbsp;&nbsp;print("b is not greater than a")</p>
+                <h2>Short Hand If</h2>
+                <p>If you have only one statement to execute, you can put it on the same line as the if statement.</p>
+                <h3>Example</h3>
+                <p>One line if statement:</p>
+                <p>if&nbsp;a &gt; b:&nbsp;print("a is greater than b")</p>
+                <h2>Short Hand If ... Else</h2>
+                <p>If you have only one statement to execute, one for if, and one for else, you can put it all on the
+                    same line:</p>
+                <h3>Example</h3>
+                <p>One line if else statement:</p>
+                <p>a =&nbsp;2<br /> b =&nbsp;330<br /> print("A")&nbsp;if&nbsp;a &gt; b&nbsp;else&nbsp;print("B")</p>
+                <p>This technique is known as&nbsp;<strong>Ternary Operators</strong>, or&nbsp;<strong>Conditional
+                        Expressions</strong>.</p>
+                <p>You can also have multiple else statements on the same line:</p>
+                <h3>Example</h3>
+                <p>One line if else statement, with 3 conditions:</p>
+                <p>a =&nbsp;330<br /> b =&nbsp;330<br /> print("A")&nbsp;if&nbsp;a &gt;
+                    b&nbsp;else&nbsp;print("=")&nbsp;if&nbsp;a == b&nbsp;else&nbsp;print("B")</p>
+                <h2>And</h2>
+                <p>The&nbsp;and&nbsp;keyword is a logical operator, and is used to combine conditional statements:</p>
+                <h3>Example</h3>
+                <p>Test if&nbsp;<em>a</em>&nbsp;is greater than&nbsp;<em>b</em>, AND if&nbsp;<em>c</em>&nbsp;is greater
+                    than&nbsp;<em>a</em>:</p>
+                <p>a =&nbsp;200<br /> b =&nbsp;33<br /> c =&nbsp;500<br /> if&nbsp;a &gt; b and c &gt; a:<br />
+                    &nbsp;&nbsp;print("Both conditions are True")</p>
+                <h2>Or</h2>
+                <p>The&nbsp;<em>or</em>&nbsp;keyword is a logical operator, and is used to combine conditional
+                    statements:</p>
+                <h3>Example</h3>
+                <p>Test if&nbsp;<em>a</em>&nbsp;is greater than&nbsp;<em>b</em>, OR if&nbsp;<em>a</em>&nbsp;is greater
+                    than&nbsp;<em>c</em>:</p>
+                <p>a =&nbsp;200<br /> b =&nbsp;33<br /> c =&nbsp;500<br /> if&nbsp;a &gt; b or a &gt; c:<br />
+                    &nbsp;&nbsp;print("At least one of the conditions is True")</p>
+                <h2>Nested If</h2>
+                <p>You can have&nbsp;<em>if</em>&nbsp;statements inside&nbsp;<em>if</em>&nbsp;statements, this is
+                    called&nbsp;<em>nested</em>&nbsp;<em>if</em>&nbsp;statements.</p>
+                <h3>Example</h3>
+                <p>x =&nbsp;41<br /> <br /> if&nbsp;x &gt;&nbsp;10:<br /> &nbsp;&nbsp;print("Above ten,")<br />
+                    &nbsp;&nbsp;if&nbsp;x &gt;&nbsp;20:<br /> &nbsp;&nbsp;&nbsp;&nbsp;print("and also above 20!")<br />
+                    &nbsp;&nbsp;else:<br /> &nbsp;&nbsp;&nbsp;&nbsp;print("but not above 20.")</p>
+                <h2>The pass Statement</h2>
+                <p><em>if</em>&nbsp;statements cannot be empty, but if you for some reason have
+                    an&nbsp;<em>if</em>&nbsp;statement with no content, put in the&nbsp;<em>pass</em>&nbsp;statement to
+                    avoid getting an error.</p>
+                <h3>Example</h3>
+                <p>a =&nbsp;33<br /> b =&nbsp;200<br /> <br /> if&nbsp;b &gt; a:<br /> &nbsp;&nbsp;pass</p>
+                <p><strong>&nbsp;</strong></p>
+                <h2>The while loop</h2>
+                <p>With the&nbsp;while&nbsp;loop we can execute a set of statements as long as a condition is true.</p>
+                <h3>Example</h3>
+                <p>Print i as long as i is less than 6:</p>
+                <p>i =&nbsp;1<br /> while&nbsp;i &lt;&nbsp;6:<br /> &nbsp;&nbsp;print(i)<br /> &nbsp;&nbsp;i +=&nbsp;1
+                </p>
+                <p><strong>Note:</strong>&nbsp;remember to increment i, or else the loop will continue forever.</p>
+                <p>The&nbsp;while&nbsp;loop requires relevant variables to be ready, in this example we need to define
+                    an indexing variable,&nbsp;i, which we set to 1.</p>
+                <h2>The break Statement</h2>
+                <p>With the&nbsp;break&nbsp;statement we can stop the loop even if the while condition is true:</p>
+                <h3>Example</h3>
+                <p>Exit the loop when i is 3:</p>
+                <p>i =&nbsp;1<br /> while&nbsp;i &lt;&nbsp;6:<br /> &nbsp;&nbsp;print(i)<br /> &nbsp;&nbsp;if&nbsp;i
+                    ==&nbsp;3:<br /> &nbsp;&nbsp;&nbsp;&nbsp;break<br /> &nbsp;&nbsp;i +=&nbsp;1</p>
+                <h2>The continue Statement</h2>
+                <p>With the&nbsp;continue&nbsp;statement we can stop the current iteration, and continue with the next:
+                </p>
+                <h3>Example</h3>
+                <p>Continue to the next iteration if i is 3:</p>
+                <p>i =&nbsp;0<br /> while&nbsp;i &lt;&nbsp;6:<br /> &nbsp;&nbsp;i +=&nbsp;1<br /> &nbsp;&nbsp;if&nbsp;i
+                    ==&nbsp;3:<br /> &nbsp;&nbsp;&nbsp;&nbsp;continue<br /> &nbsp;&nbsp;print(i)</p>
+                <h2>The else Statement</h2>
+                <p>With the&nbsp;else&nbsp;statement we can run a block of code once when the condition no longer is
+                    true:</p>
+                <h3>Example</h3>
+                <p>Print a message once the condition is false:</p>
+                <p>i =&nbsp;1<br /> while&nbsp;i &lt;&nbsp;6:<br /> &nbsp;&nbsp;print(i)<br /> &nbsp;&nbsp;i
+                    +=&nbsp;1<br /> else:<br /> &nbsp;&nbsp;print("i is no longer less than 6")</p>
+                <h2>&nbsp;</h2>
+                <h2>&nbsp;</h2>
+                <h2>For Loops</h2>
+                <p>A&nbsp;for&nbsp;loop is used for iterating over a sequence (that is either a list, a tuple, a
+                    dictionary, a set, or a string).</p>
+                <p>This is less like the&nbsp;for&nbsp;keyword in other programming languages, and works more like an
+                    iterator method as found in other object-orientated programming languages.</p>
+                <p>With the&nbsp;for&nbsp;loop we can execute a set of statements, once for each item in a list, tuple,
+                    set etc.</p>
+                <h3>Example</h3>
+                <p>Print each fruit in a fruit list:</p>
+                <p>fruits = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> for&nbsp;x&nbsp;in&nbsp;fruits:<br />
+                    &nbsp;&nbsp;print(x)</p>
+                <p>The&nbsp;for&nbsp;loop does not require an indexing variable to set beforehand.</p>
+                <h2>Looping Through a String</h2>
+                <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+                <h3>Example</h3>
+                <p>Loop through the letters in the word "banana":</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;"banana":<br /> &nbsp;&nbsp;print(x)</p>
+                <h2>The break Statement</h2>
+                <p>With the&nbsp;break&nbsp;statement we can stop the loop before it has looped through all the items:
+                </p>
+                <h3>Example</h3>
+                <p>Exit the loop when&nbsp;<em>x</em>&nbsp;is "banana":</p>
+                <p>fruits = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> for&nbsp;x&nbsp;in&nbsp;fruits:<br />
+                    &nbsp;&nbsp;print(x)<br /> &nbsp;&nbsp;if&nbsp;x ==&nbsp;"banana":<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;break</p>
+                <h3>Example</h3>
+                <p>Exit the loop when&nbsp;<em>x</em>&nbsp;is "banana", but this time the break comes before the print:
+                </p>
+                <p>fruits = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> for&nbsp;x&nbsp;in&nbsp;fruits:<br />
+                    &nbsp;&nbsp;if&nbsp;x ==&nbsp;"banana":<br /> &nbsp;&nbsp;&nbsp;&nbsp;break<br />
+                    &nbsp;&nbsp;print(x)</p>
+                <h2>The continue Statement</h2>
+                <p>With the&nbsp;continue&nbsp;statement we can stop the current iteration of the loop, and continue
+                    with the next:</p>
+                <h3>Example</h3>
+                <p>Do not print banana:</p>
+                <p>fruits = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> for&nbsp;x&nbsp;in&nbsp;fruits:<br />
+                    &nbsp;&nbsp;if&nbsp;x ==&nbsp;"banana":<br /> &nbsp;&nbsp;&nbsp;&nbsp;continue<br />
+                    &nbsp;&nbsp;print(x)</p>
+                <h2>The range() Function</h2>
+                <p>To loop through a set of code a specified number of times, we can use the&nbsp;range()&nbsp;function,
+                </p>
+                <p>The&nbsp;range()&nbsp;function returns a sequence of numbers, starting from 0 by default, and
+                    increments by 1 (by default), and ends at a specified number.</p>
+                <h3>Example</h3>
+                <p>Using the range() function:</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;range(6):<br /> &nbsp;&nbsp;print(x)</p>
+                <p>Note that&nbsp;range(6)&nbsp;is not the values of 0 to 6, but the values 0 to 5.</p>
+                <p>The&nbsp;range()&nbsp;function defaults to 0 as a starting value, however it is possible to specify
+                    the starting value by adding a parameter:&nbsp;range(2, 6), which means values from 2 to 6 (but not
+                    including 6):</p>
+                <h3>Example</h3>
+                <p>Using the start parameter:</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;range(2,&nbsp;6):<br /> &nbsp;&nbsp;print(x)</p>
+                <p>The&nbsp;range()&nbsp;function defaults to increment the sequence by 1, however it is possible to
+                    specify the increment value by adding a third parameter:&nbsp;range(2, 30,&nbsp;<strong>3</strong>):
+                </p>
+                <h3>Example</h3>
+                <p>Increment the sequence with 3 (default is 1):</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;range(2,&nbsp;30,&nbsp;3):<br /> &nbsp;&nbsp;print(x)</p>
+                <h2>Else in For Loop</h2>
+                <p>The&nbsp;<em>else</em>&nbsp;keyword in a&nbsp;<em>for</em>&nbsp;loop specifies a block of code to be
+                    executed when the loop is finished:</p>
+                <h3>Example</h3>
+                <p>Print all numbers from 0 to 5, and print a message when the loop has ended:</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;range(6):<br /> &nbsp;&nbsp;print(x)<br /> else:<br />
+                    &nbsp;&nbsp;print("Finally finished!")</p>
+                <p><strong>Note:</strong>&nbsp;The&nbsp;<em>else</em>&nbsp;block will NOT be executed if the loop is
+                    stopped by a&nbsp;<em>break</em>&nbsp;statement.</p>
+                <h3>Example</h3>
+                <p>Break the loop when&nbsp;<em>x</em>&nbsp;is 3, and see what happens with
+                    the&nbsp;<em>else</em>&nbsp;block:</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;range(6):<br /> &nbsp;&nbsp;if&nbsp;x ==&nbsp;3:&nbsp;break<br />
+                    &nbsp;&nbsp;print(x)<br /> else:<br /> &nbsp;&nbsp;print("Finally finished!")</p>
+                <h2>Nested Loops</h2>
+                <p>A nested loop is a loop inside a loop.</p>
+                <p>The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+                <h3>Example</h3>
+                <p>Print each adjective for every fruit:</p>
+                <p>adj = ["red",&nbsp;"big",&nbsp;"tasty"]<br /> fruits = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br />
+                    <br /> for&nbsp;x&nbsp;in&nbsp;adj:<br /> &nbsp;&nbsp;for&nbsp;y&nbsp;in&nbsp;fruits:<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;print(x, y)</p>
+                <h2>The pass Statement</h2>
+                <p><em>for</em>&nbsp;loops cannot be empty, but if you for some reason have
+                    a&nbsp;<em>for</em>&nbsp;loop with no content, put in the&nbsp;<em>pass</em>&nbsp;statement to avoid
+                    getting an error.</p>
+                <h3>Example</h3>
+                <p>for&nbsp;x&nbsp;in&nbsp;[0,&nbsp;1,&nbsp;2]:<br /> &nbsp;&nbsp;pass</p>
+                <p><strong>&nbsp;</strong></p>
+            </div>
+            <br>
+            <iframe src="https://trinket.io/embed/python3/2fa0a70b55" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <br><br>
+        </div>
+        <img src="../static/images/kjm.png" alt="kjm" width="500" height="400"
+            style="transform: translate(1000px,-150px);">
+</body>
+
+</html>

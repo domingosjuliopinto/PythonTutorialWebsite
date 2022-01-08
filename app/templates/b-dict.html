@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .about {
+            height: auto;
+            width: 1000px;
+            background-color: white;
+            text-align: center;
+            transform: translateX(25%);
+        }
+
+        .about p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrowb">
+        <div class="img1">
+            <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+        </div>
+        <div class="img2">
+            <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+        </div>
+        <h4>King Julien's</h4>
+        <h1>Python of Madagascar</h1>
+        <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+        <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+        <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+        <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+            <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+            <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+            <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+            <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+            <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+            <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+            <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+            <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+            <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+        </ul>
+        <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px"
+            style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+        <br>
+        <div class="container">
+            <div class="text-justify">
+                <h2>Python Dictionaries</h2>
+                <h2>Dictionary</h2>
+                <p>Dictionaries are used to store data values in key:value pairs.</p>
+                <p>A dictionary is a collection which is ordered*, changeable and does not allow duplicates.</p>
+                <p>As of Python version 3.7, dictionaries are&nbsp;<em>ordered</em>. In Python 3.6 and earlier,
+                    dictionaries are&nbsp;<em>unordered</em>.</p>
+                <p>Dictionaries are written with curly brackets, and have keys and values:</p>
+                <h3>Example</h3>
+                <p>Create and print a dictionary:</p>
+                <p>thisdict =&nbsp;{<br /> &nbsp;&nbsp;"brand":&nbsp;"Ford",<br />
+                    &nbsp;&nbsp;"model":&nbsp;"Mustang",<br /> &nbsp;&nbsp;"year":&nbsp;1964<br /> }<br />
+                    print(thisdict)</p>
+                <p><strong>&nbsp;</strong></p>
+                <h2>Dictionary Items</h2>
+                <p>Dictionary items are ordered, changeable, and does not allow duplicates.</p>
+                <p>Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</p>
+                <h3>Example</h3>
+                <p>Print the "brand" value of the dictionary:</p>
+                <p>thisdict =&nbsp;{<br /> &nbsp;&nbsp;"brand":&nbsp;"Ford",<br />
+                    &nbsp;&nbsp;"model":&nbsp;"Mustang",<br /> &nbsp;&nbsp;"year":&nbsp;1964<br /> }<br />
+                    print(thisdict["brand"])</p>
+                <h2>Ordered or Unordered?</h2>
+                <p>As of Python version 3.7, dictionaries are&nbsp;<em>ordered</em>. In Python 3.6 and earlier,
+                    dictionaries are&nbsp;<em>unordered</em>.</p>
+                <p>When we say that dictionaries are ordered, it means that the items have a defined order, and that
+                    order will not change.</p>
+                <p>Unordered means that the items does not have a defined order, you cannot refer to an item by using an
+                    index.</p>
+                <h2>Changeable</h2>
+                <p>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has
+                    been created.</p>
+                <h2>Duplicates Not Allowed</h2>
+                <p>Dictionaries cannot have two items with the same key:</p>
+                <h3>Example</h3>
+                <p>Duplicate values will overwrite existing values:</p>
+                <p>thisdict =&nbsp;{<br /> &nbsp;&nbsp;"brand":&nbsp;"Ford",<br />
+                    &nbsp;&nbsp;"model":&nbsp;"Mustang",<br /> &nbsp;&nbsp;"year":&nbsp;1964,<br />
+                    &nbsp;&nbsp;"year":&nbsp;2020<br /> }<br /> print(thisdict)</p>
+                <h2>Dictionary Length</h2>
+                <p>To determine how many items a dictionary has, use the&nbsp;len()&nbsp;function:</p>
+                <h3>Example</h3>
+                <p>Print the number of items in the dictionary:</p>
+                <p>print(len(thisdict))</p>
+                <h2>Dictionary Items - Data Types</h2>
+                <p>The values in dictionary items can be of any data type:</p>
+                <h3>Example</h3>
+                <p>String, int, boolean, and list data types:</p>
+                <p>thisdict =&nbsp;{<br /> &nbsp;&nbsp;"brand":&nbsp;"Ford",<br />
+                    &nbsp;&nbsp;"electric":&nbsp;False,<br /> &nbsp;&nbsp;"year":&nbsp;1964,<br /> &nbsp;&nbsp;"colors":
+                    ["red",&nbsp;"white",&nbsp;"blue"]<br /> }</p>
+                <h2>type()</h2>
+                <p>From Python's perspective, dictionaries are defined as objects with the data type 'dict':</p>
+                <p>&lt;class 'dict'&gt;</p>
+                <h3>Example</h3>
+                <p>Print the data type of a dictionary:</p>
+                <p>thisdict =&nbsp;{<br /> &nbsp;&nbsp;"brand":&nbsp;"Ford",<br />
+                    &nbsp;&nbsp;"model":&nbsp;"Mustang",<br /> &nbsp;&nbsp;"year":&nbsp;1964<br /> }<br />
+                    print(type(thisdict))</p>
+                <h2>&nbsp;</h2>
+            </div>
+
+            <br>
+            <iframe src="https://trinket.io/embed/python3/2fa0a70b55" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <br><br>
+
+
+        </div>
+        <img src="../static/images/kjm.png" alt="kjm" width="500" height="400"
+            style="transform: translate(1000px,-150px);">
+</body>
+
+</html>

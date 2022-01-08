@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .about{
+        height: auto;
+        width: 1000px;
+        background-color: white;
+        text-align: center;
+        transform: translateX(25%);
+      }
+
+      .about p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hrowb">
+      <div class="img1">
+        <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+      </div>
+      <div class="img2">
+        <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+      </div>
+      <h4>King Julien's</h4><h1>Python of Madagascar</h1>
+      <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+      <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+      <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+      <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+          <li><a href="/clasobj"><i class="fas fa-font"></i>Class & <br> Objects</a></li>
+          <li><a href="/modules"><i class="fas fa-database"></i>Modules</a></li>
+          <li><a href="/inherit"><i class="fas fa-stream"></i>Inheritance</a></li>
+          <li><a href="/filehand"><i class="fas fa-list"></i>File Handling</a></li>
+          <li><a href="/gui"><i class="fas fa-book"></i>GUI</a></li>
+          <li><a href="/polymor"><i class="fas fa-rainbow"></i>Polymorphism</a></li>
+        </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px" style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+      <br>
+      <h1>Python Modules</h1><br>
+      <h3>What is a Module?</h3>
+      <p>
+        Consider a module to be the same as a code library. <br>
+A file containing a set of functions you want to include in your application.
+      </p>
+      <br>
+      <h2>Create a Module</h2>
+      <p>
+        To create a module just save the code you want in a file with the file extension .py: </p>
+      <br>
+      <h2>Use a Module</h2>
+      <p>
+        Now we can use the module we just created, by using the import statement:
+      </p>
+      <br>
+      <h2>Variables in Module</h2>
+      <p>
+        The module can contain functions, as already described, but also variables of all types (arrays, dictionaries, objects etc):
+      </p>
+      <br>
+      <h2>Naming a Module</h2>
+      <p>
+        You can name the module file whatever you like, but it must have the file extension .py
+      </p>
+      <br>
+      <h2>Re-naming a Module</h2>
+      <p>
+        You can create an alias when you import a module, by using the as keyword:
+      </p>
+      <br>
+      <h2>Built-in Modules</h2>
+      <p>
+        You can create an alias when you import a module, by using the as keyword:
+      </p>.
+      <br>
+      <h2>Using the dir() Function</h2>
+      <p>
+        There is a built-in function to list all the function names (or variable names) in a module. The dir() function:
+      </p>.
+      <br>
+      <h2>Import From Module</h2>
+      <p>
+        You can choose to import only parts from a module, by using the from keyword.
+      </p>.
+      <br>
+      <iframe src="https://trinket.io/embed/python3/85af5dd74f" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+    </body>
+</html>

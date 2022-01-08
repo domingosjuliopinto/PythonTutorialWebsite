@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .about {
+            height: auto;
+            width: 1000px;
+            background-color: white;
+            text-align: center;
+            transform: translateX(25%);
+        }
+
+        .about p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrowb">
+        <div class="img1">
+            <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+        </div>
+        <div class="img2">
+            <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+        </div>
+        <h4>King Julien's</h4>
+        <h1>Python of Madagascar</h1>
+        <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+        <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+        <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+        <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+            <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+            <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+            <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+            <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+            <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+            <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+            <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+            <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+            <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+        </ul>
+        <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px"
+            style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+        <br>
+        <div class="container">
+            <div class="text-justify">
+                <h1><strong>String</strong></h1>
+                <p><strong>&nbsp;</strong></p>
+                <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.</p>
+                <p>'hello'&nbsp;is the same as&nbsp;"hello".</p>
+                <p>You can display a string literal with the&nbsp;print()&nbsp;function:</p>
+                <h3>Example</h3>
+                <p>print("Hello")<br /> print('Hello')</p>
+                <h2>&nbsp;</h2>
+                <h2>Assign String to a Variable</h2>
+                <p>Assigning a string to a variable is done with the variable name followed by an equal sign and the
+                    string:</p>
+                <h3>Example</h3>
+                <p>a =&nbsp;"Hello"<br /> print(a)</p>
+                <h2>Multiline Strings</h2>
+                <p>You can assign a multiline string to a variable by using three quotes:</p>
+                <h3>Example</h3>
+                <p>You can use three double quotes:</p>
+                <p>a =&nbsp;"""Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit,<br /> sed do eiusmod
+                    tempor incididunt<br /> ut labore et dolore magna aliqua."""<br /> print(a)</p>
+                <p><strong>&nbsp;</strong></p>
+                <h2>Strings are Arrays</h2>
+                <p>Like many other popular programming languages, strings in Python are arrays of bytes representing
+                    unicode characters.</p>
+                <p>However, Python does not have a character data type, a single character is simply a string with a
+                    length of 1.</p>
+                <p>Square brackets can be used to access elements of the string.</p>
+                <h2>Looping Through a String</h2>
+                <p>Since strings are arrays, we can loop through the characters in a string, with a&nbsp;for&nbsp;loop.
+                </p>
+                <h3>Example</h3>
+                <p>Loop through the letters in the word "banana":</p>
+                <p>for&nbsp;x&nbsp;in&nbsp;"banana":<br /> &nbsp;&nbsp;print(x)</p>
+                <h2>String Length</h2>
+                <p>To get the length of a string, use the&nbsp;len()&nbsp;function.</p>
+                <h3>Example</h3>
+                <p>The&nbsp;len()&nbsp;function returns the length of a string:</p>
+                <p>a =&nbsp;"Hello, World!"<br /> print(len(a))</p>
+                <h2>Check String</h2>
+                <p>To check if a certain phrase or character is present in a string, we can use the keyword&nbsp;in.</p>
+                <h3>Example</h3>
+                <p>Check if "free" is present in the following text:</p>
+                <p>txt =&nbsp;"The best things in life are free!"<br /> print("free"&nbsp;in&nbsp;txt)</p>
+                <h2>Check if NOT</h2>
+                <p>To check if a certain phrase or character is NOT present in a string, we can use the keyword&nbsp;not
+                    in.</p>
+                <h3>Example</h3>
+                <p>Check if "expensive" is NOT present in the following text:</p>
+                <p>txt =&nbsp;"The best things in life are free!"<br /> print("expensive"&nbsp;not&nbsp;in&nbsp;txt)</p>
+                
+            </div>
+
+            <br>
+            <iframe src="https://trinket.io/embed/python3/2fa0a70b55" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <br><br>
+
+
+        </div>
+        <img src="../static/images/kjm.png" alt="kjm" width="500" height="400"
+            style="transform: translate(1000px,-150px);">
+</body>
+
+</html>

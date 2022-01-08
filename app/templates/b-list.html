@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        .about {
+            height: auto;
+            width: 1000px;
+            background-color: white;
+            text-align: center;
+            transform: translateX(25%);
+        }
+
+        .about p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrowb">
+        <div class="img1">
+            <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+        </div>
+        <div class="img2">
+            <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+        </div>
+        <h4>King Julien's</h4>
+        <h1>Python of Madagascar</h1>
+        <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+        <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+        <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+        <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+            <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+            <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+            <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+            <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+            <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+            <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+            <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+            <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+            <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+        </ul>
+        <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px"
+            style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+        <br>
+        <div class="container">
+            <div class="text-justify">
+                <h2>List</h2>
+                <p>Lists are used to store multiple items in a single variable.</p>
+                <p>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3
+                    are&nbsp;<a href="https://www.w3schools.com/python/python_tuples.asp">Tuple</a>,&nbsp;<a
+                        href="https://www.w3schools.com/python/python_sets.asp">Set</a>, and&nbsp;<a
+                        href="https://www.w3schools.com/python/python_dictionaries.asp">Dictionary</a>, all with
+                    different qualities and usage.</p>
+                <p>Lists are created using square brackets:</p>
+                <h3>Example</h3>
+                <p>Create a List:</p>
+                <p>thislist = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> print(thislist)</p>
+                <h2>List Items</h2>
+                <p>List items are ordered, changeable, and allow duplicate values.</p>
+                <p>List items are indexed, the first item has index&nbsp;[0], the second item has
+                    index&nbsp;[1]&nbsp;etc.</p>
+                <h2>Ordered</h2>
+                <p>When we say that lists are ordered, it means that the items have a defined order, and that order will
+                    not change.</p>
+                <p>If you add new items to a list, the new items will be placed at the end of the list.</p>
+                <p><strong>Note:</strong>&nbsp;There are some&nbsp;list methods&nbsp;that will change the order, but in
+                    general: the order of the items will not change.</p>
+                <h2>Changeable</h2>
+                <p>The list is changeable, meaning that we can change, add, and remove items in a list after it has been
+                    created.</p>
+                <h2>Allow Duplicates</h2>
+                <p>Since lists are indexed, lists can have items with the same value:</p>
+                <h3>Example</h3>
+                <p>Lists allow duplicate values:</p>
+                <p>thislist = ["apple",&nbsp;"banana",&nbsp;"cherry",&nbsp;"apple",&nbsp;"cherry"]<br /> print(thislist)
+                </p>
+                <p><strong>&nbsp;</strong></p>
+                <p><strong>&nbsp;</strong></p>
+                <h2>List Length</h2>
+                <p>To determine how many items a list has, use the&nbsp;len()&nbsp;function:</p>
+                <h3>Example</h3>
+                <p>Print the number of items in the list:</p>
+                <p>thislist = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> print(len(thislist))</p>
+                <h2>List Items - Data Types</h2>
+                <p>List items can be of any data type:</p>
+                <h3>Example</h3>
+                <p>String, int and boolean data types:</p>
+                <p>list1 = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> list2 =
+                    [1,&nbsp;5,&nbsp;7,&nbsp;9,&nbsp;3]<br /> list3 = [True,&nbsp;False,&nbsp;False]</p>
+                <p>A list can contain different data types:</p>
+                <h3>Example</h3>
+                <p>A list with strings, integers and boolean values:</p>
+                <p>list1 = ["abc",&nbsp;34,&nbsp;True,&nbsp;40,&nbsp;"male"]</p>
+                <h2>type()</h2>
+                <p>From Python's perspective, lists are defined as objects with the data type 'list':</p>
+                <p>&lt;class 'list'&gt;</p>
+                <h3>Example</h3>
+                <p>What is the data type of a list?</p>
+                <p>mylist = ["apple",&nbsp;"banana",&nbsp;"cherry"]<br /> print(type(mylist))</p>
+                <h2>The list() Constructor</h2>
+                <p>It is also possible to use the&nbsp;list()&nbsp;constructor when creating a new list.</p>
+                <h3>Example</h3>
+                <p>Using the&nbsp;list()&nbsp;constructor to make a List:</p>
+                <p>thislist = list(("apple",&nbsp;"banana",&nbsp;"cherry"))&nbsp;# note the double round-brackets<br />
+                    print(thislist)</p>
+                
+            </div>
+
+            <br>
+            <iframe src="https://trinket.io/embed/python3/2fa0a70b55" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <br><br>
+
+
+        </div>
+        <img src="../static/images/kjm.png" alt="kjm" width="500" height="400"
+            style="transform: translate(1000px,-150px);">
+</body>
+
+</html>

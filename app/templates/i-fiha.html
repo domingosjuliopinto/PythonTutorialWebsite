@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .about{
+        height: auto;
+        width: 1000px;
+        background-color: white;
+        text-align: center;
+        transform: translateX(25%);
+      }
+
+      .about p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hrowb">
+      <div class="img1">
+        <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+      </div>
+      <div class="img2">
+        <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+      </div>
+      <h4>King Julien's</h4><h1>Python of Madagascar</h1>
+      <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+      <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+      <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+      <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+          <li><a href="/clasobj"><i class="fas fa-font"></i>Class & <br> Objects</a></li>
+          <li><a href="/modules"><i class="fas fa-database"></i>Modules</a></li>
+          <li><a href="/inherit"><i class="fas fa-stream"></i>Inheritance</a></li>
+          <li><a href="/filehand"><i class="fas fa-list"></i>File Handling</a></li>
+          <li><a href="/gui"><i class="fas fa-book"></i>GUI</a></li>
+          <li><a href="/polymor"><i class="fas fa-rainbow"></i>Polymorphism</a></li>
+        </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px" style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+      <br>
+      <h1>File Handling</h1><br>
+      <p>
+        File handling is an important part of any web application. <br>
+       Python has several functions for creating, reading, updating, and deleting files.<br>
+       The key function for working with files in Python is the open() function. <br>
+The open() function takes two parameters; filename, and mode. <br>
+There are four different methods (modes) for opening a file: <br>
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist <br>
+"a" - Append - Opens a file for appending, creates the file if it does not exist <br>
+"w" - Write - Opens a file for writing, creates the file if it does not exist <br>
+"x" - Create - Creates the specified file, returns an error if the file exists <br>
+In addition you can specify if the file should be handled as binary or text mode <br>
+"t" - Text - Default value. Text mode <br>
+"b" - Binary - Binary mode (e.g. images) <br>
+
+      </p>
+      <br>
+      <h2 align = "left">Syntax</h2>
+      <p align = "left">
+        To open a file for reading it is enough to specify the name of the file:
+         f = open("demofile.txt") <br>
+         The code above is the same as: <br>
+         f = open("demofile.txt", "rt") <br>
+         Because "r" for read, and "t" for text are the default values, you do not need to specify them. <br>
+
+      </p>
+      <br>
+      <iframe src="https://trinket.io/embed/python3/6fcbc5c1f3" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+    </body>
+</html>

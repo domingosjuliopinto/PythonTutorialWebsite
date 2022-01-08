@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <title>Sider Menu Bar CSS</title> -->
+  <link rel="stylesheet" href="../static/beg.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <style>
+    .about {
+      height: auto;
+      width: 1000px;
+      background-color: white;
+      text-align: center;
+      transform: translateX(25%);
+    }
+
+    .about p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hrowb">
+    <div class="img1">
+      <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+    </div>
+    <div class="img2">
+      <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+    </div>
+    <h4>King Julien's</h4>
+    <h1>Python of Madagascar</h1>
+    <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+    <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+    <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+    <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+  </div>
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header>Your Pages</header>
+    <ul>
+      <li><a href="/varandtc"><i class="fas fa-font"></i>Variables & <br> Type Casting</a></li>
+      <li><a href="/datatype"><i class="fas fa-database"></i>Data Types</a></li>
+      <li><a href="/operation"><i class="fas fa-plus"></i>Operators</a></li>
+      <li><a href="/strings"><i class="fas fa-stream"></i>String</a></li>
+      <li><a href="/lists"><i class="fas fa-list"></i>List</a></li>
+      <li><a href="/tuples"><i class="fas fa-tasks"></i>Tuple</a></li>
+      <li><a href="/diction"><i class="fas fa-book"></i>Dictionary</a></li>
+      <li><a href="/sets"><i class="far fa-circle"></i>Set</a></li>
+      <li><a href="/loops"><i class="fas fa-rainbow"></i>Loops</a></li>
+    </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px"
+      style="transform: translateX(80px);">
+  </div>
+  <div class="about">
+    <br>
+    <div class="container">
+      <div class="text-justify">
+        <p><strong>Beginner:</strong></p>
+        <p><strong>Data types</strong></p>
+        <h2>Built-in Data Types</h2>
+        <p>In programming, data type is an important concept.</p>
+        <p>Variables can store data of different types, and different types can do different things.</p>
+        <p>Python has the following data types built-in by default, in these categories:</p>
+        <div class="p-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>
+                  <p>Text Type:</p>
+                </th>
+                <th>
+                  <p>str</p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Numeric Types:</p>
+                </td>
+                <td>
+                  <p>int,&nbsp;float,&nbsp;complex</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Sequence Types:</p>
+                </td>
+                <td>
+                  <p>list,&nbsp;tuple,&nbsp;range</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Mapping Type:</p>
+                </td>
+                <td>
+                  <p>dict</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Set Types:</p>
+                </td>
+                <td>
+                  <p>set,&nbsp;frozenset</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Boolean Type:</p>
+                </td>
+                <td>
+                  <p>bool</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Binary Types:</p>
+                </td>
+                <td>
+                  <p>bytes,&nbsp;bytearray,&nbsp;memoryview</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>&nbsp;</strong></p>
+
+        <h2>Setting the Data Type</h2>
+        <p>In Python, the data type is set when you assign a value to a variable:</p>
+        <p><strong>&nbsp;</strong></p>
+        <div class="p-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <td>
+                  <p><strong>Example</strong></p>
+                  </th>
+                <th>
+                  <p><strong>Data Type</strong></p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>
+                  <p>x = "Hello World"</p>
+                </td>
+                <td>
+                  <p>str</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = 20</p>
+                </td>
+                <td>
+                  <p>int</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = 20.5</p>
+                </td>
+                <td>
+                  <p>float</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = 1j</p>
+                </td>
+                <td>
+                  <p>complex</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = ["apple", "banana", "cherry"]</p>
+                </td>
+                <td>
+                  <p>list</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = ("apple", "banana", "cherry")</p>
+                </td>
+                <td>
+                  <p>tuple</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = range(6)</p>
+                </td>
+                <td>
+                  <p>range</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = {"name" : "John", "age" : 36}</p>
+                </td>
+                <td>
+                  <p>dict</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = {"apple", "banana", "cherry"}</p>
+                </td>
+                <td>
+                  <p>set</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = frozenset({"apple", "banana", "cherry"})</p>
+                </td>
+                <td>
+                  <p>frozenset</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = True</p>
+                </td>
+                <td>
+                  <p>bool</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = b"Hello"</p>
+                </td>
+                <td>
+                  <p>bytes</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = bytearray(5)</p>
+                </td>
+                <td>
+                  <p>bytearray</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>x = memoryview(bytes(5))</p>
+                </td>
+                <td>
+                  <p>memoryview</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2>Setting the Specific Data Type</h2>
+        <p>If you want to specify the data type, you can use the following constructor functions:</p>
+        <div class="p-5">
+          <table class="table">
+            <thead>
+              <tr>
+                <th >
+                  <p><strong>Example</strong></p>
+                </th>
+                <th >
+                  <p><strong>Data Type</strong></p>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <td >
+                  <p>x = str("Hello World")</p>
+                </td>
+                <td >
+                  <p>str</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = int(20)</p>
+                </td>
+                <td >
+                  <p>int</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = float(20.5)</p>
+                </td>
+                <td >
+                  <p>float</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = complex(1j)</p>
+                </td>
+                <td >
+                  <p>complex</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = list(("apple", "banana", "cherry"))</p>
+                </td>
+                <td >
+                  <p>list</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = tuple(("apple", "banana", "cherry"))</p>
+                </td>
+                <td >
+                  <p>tuple</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = range(6)</p>
+                </td>
+                <td >
+                  <p>range</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = dict(name="John", age=36)</p>
+                </td>
+                <td >
+                  <p>dict</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = set(("apple", "banana", "cherry"))</p>
+                </td>
+                <td >
+                  <p>set</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = frozenset(("apple", "banana", "cherry"))</p>
+                </td>
+                <td >
+                  <p>frozenset</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = bool(5)</p>
+                </td>
+                <td >
+                  <p>bool</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = bytes(5)</p>
+                </td>
+                <td >
+                  <p>bytes</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = bytearray(5)</p>
+                </td>
+                <td >
+                  <p>bytearray</p>
+                </td>
+              </tr>
+              <tr>
+                <td >
+                  <p>x = memoryview(bytes(5))</p>
+                </td>
+                <td >
+                  <p>memoryview</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <iframe src="https://trinket.io/embed/python3/2fa0a70b55" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+
+      <br>
+
+      <br><br>
+
+
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+</body>
+
+</html>

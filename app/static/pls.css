@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color:#125e81 ;
+
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 12px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 89px;
+  font-size: 30px;
+  color: white;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+.hrow{
+  width: 100%;
+  height: 70px;
+  background-color: lightblue;
+}
+
+.hrow h4{
+  transform: translate(-115px,-145px);
+  text-align: center;
+}
+
+.hrow h1{
+  transform: translateY(-145px);
+  text-align: center;
+}
+
+.hrow button{
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+  padding: 6px 12px;
+  transform: translate(1420px,-195px);
+}
+
+.hrow .img1 img{
+  transform: translateX(980px);
+}
+
+.hrow .img2 img{
+  transform: translate(500px,-73px);
+}
+
+.Begin{
+    width: 99%;
+    height: 210px;
+    background-color: green;
+    border : 5px outset #125e81;
+}
+
+.Begin button{
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    padding: 6px 12px;
+    transform: translate(250px,-120px);
+}
+
+.Begin img{
+    position: relative; 
+    transform: translate(280px,-80px);
+}
+
+.Begin :link{
+  color: aqua;
+}
+
+.Begin a:visited {
+  color: yellow;
+}
+
+.Begin p{
+  color:aqua;
+  font-size: 22px;
+}
+
+.Begin .BP p{
+  text-align: right;
+  transform: translate(-400px, -180px);
+}
+
+.Begin .BP button{
+  transform: translate(1220px,-240px);
+}
+
+.Intermediate{
+    width: 99%;
+    height: 210px;
+    background-color:white;
+    border : 5px outset #125e81;
+}
+
+.Intermediate button{
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    padding: 6px 12px;
+    transform: translate(250px,-110px);
+}
+
+.Intermediate img{
+    position: relative;
+    transform: translate(300px,-70px);
+}
+
+.Intermediate :link{
+    color: aqua;
+}
+
+.Intermediate a:visited {
+  color: yellow;
+}
+
+.Intermediate p{
+  color:black;
+  font-size: 22px;
+}
+
+.Intermediate .IP p{
+  text-align: right;
+  transform: translate(-400px, -180px);
+}
+
+.Intermediate .IP button{
+  transform: translate(1220px,-240px);
+}
+
+.Advance{
+    width: 99%;
+    height: 210px;
+    background-color: red;
+    border : 5px outset #125e81;
+}
+
+.Advance button{
+    background: #042331;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    padding: 6px 12px;
+    transform: translate(250px,-200px);
+}
+
+
+.Advance img{
+    position: relative;
+    transform: translate(300px,-130px);
+}
+
+.Advance :link{
+  color: aqua;
+}
+
+.Advance a:visited {
+  color: yellow;
+}
+
+.Advance p{
+  color:aqua;
+  font-size: 22px;
+}
+
+.Advance .AP p{
+  text-align: right;
+  transform: translate(-400px, -260px);
+}
+
+.Advance .AP button{
+  transform: translate(1220px,-320px);
+}
+
+.Con{
+  transform: translate(600px,100px);
+  color: white;
+}

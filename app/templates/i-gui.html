@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- <title>Sider Menu Bar CSS</title> -->
+    <link rel="stylesheet" href="../static/beg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      .about{
+        height: auto;
+        width: 1000px;
+        background-color: white;
+        text-align: center;
+        transform: translateX(25%);
+      }
+
+      .about p{
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hrowb">
+      <div class="img1">
+        <img src="../static/images/kj1.png" alt="King Julien" width="49px" height="70 px">
+      </div>
+      <div class="img2">
+        <img src="../static/images/kj3.png" alt="also King Julien" width="48px" height="72 px">
+      </div>
+      <h4>King Julien's</h4><h1>Python of Madagascar</h1>
+      <button><a href="/home"><i class="fas fa-home"></i><br>Home</a></button>
+      <button><a href="/pylessons"><i class="fas fa-book-open"></i> Python<br> Lessons</a></button>
+      <button><a href="/about"><i class="far fa-question-circle"></i><br>About Us</a></button>
+      <button><a href="/contact"><i class="far fa-envelope"></i><br>Contact</a></button>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+    <div class="sidebar">
+        <header>Your Pages</header>
+        <ul>
+          <li><a href="/clasobj"><i class="fas fa-font"></i>Class & <br> Objects</a></li>
+          <li><a href="/modules"><i class="fas fa-database"></i>Modules</a></li>
+          <li><a href="/inherit"><i class="fas fa-stream"></i>Inheritance</a></li>
+          <li><a href="/filehand"><i class="fas fa-list"></i>File Handling</a></li>
+          <li><a href="/gui"><i class="fas fa-book"></i>GUI</a></li>
+          <li><a href="/polymor"><i class="fas fa-rainbow"></i>Polymorphism</a></li>
+        </ul>
+    <img src="../static/images/kolwos.png" alt="Kowoski" width="59px" height="130 px" style="transform: translateX(80px);">
+    </div>
+    <div class="about">
+      <br>
+      <h1>Pyhton GUI</h1><br>
+      <p>
+        A Graphical User Interface(GUI) is the first thing your user sees and interacts with when they opens your application or website. Having a good GUI goes a long way in increasing your platform's reputation and user count. A user interface usually includes a host of visual elements like icons, buttons, graphics, displayed text, and several other forms of input, like checkbox, text input boxes, and such.
+                <br>
+        It's the combination of all these elements that makes up a vital part of your application or website's user experience Input to these Visual elements can be from the usual mediums, such as keyboards, mice and touchscreens
+       <br>
+        <p align = "left">
+        The most popular Python GUI frameworks in are listed below. <br>
+
+        - PyQt5 <br>
+
+        - Tkinter <br>
+
+        - Kivy <br>
+
+        - wxPython <br>
+
+        - Libavg <br>
+
+        - PySimpleGU <br>
+
+        - PyForms <br>
+
+        - Wax <br>
+
+        - PySide2 <br>
+
+        - PyGUI <br>
+        </p>
+      </p>
+      <br>
+      <h2 align = "left">TKinter</h2>
+      <p align = "left">
+        Python has a lot of GUI frameworks, but Tkinter is the only framework that's built into the<br> Python standard library. Tkinter has several strengths. It's cross-platform, so the same code<br> works on Windows, macOS, and Linux. Tkinter is lightweight and relatively painless to use compared to other frameworks.
+            <br>
+        The foundational element of a Tkinter GUT is the window Windows are the containers in which all other GI elements live These other it 1 elements, such as text boxes labels, and butions and laws as widgets Widgets are contained inside of windows.
+      </p>
+      <br>
+      <h2 align = "left">Importing TKinter</h2>
+      <p align = "left">
+        With your Python shell open, the first thing you need to do is import the Python GUI Tkinter module:
+          <br><br>
+        >>> import tkinter as tk
+          <br><br>
+        A window is an instance of Tkinter's Tk class. Go ahead and create a new window and assign it to the variable window:
+          <br><br>
+        >>>window = tk.Tk()
+          <br><br>
+        When you execute the above code: a new window pops up on your screen.
+      </p>
+      <br>
+      <h2 align = "left">Selection Widgets</h2>
+      <p align = "left">
+        Radiobutton: This widget displays a toggle button having an ON/OFF state. There may be more than one button, but only one of them will be ON at a given time.
+             <br>
+        Checkbutton: This is also a toggle button. A rectangular check box appears before its caption. Its ON state is displayed by the tick mark in the box which disappears when it is clicked to OFF
+            <br>
+        Combobox: This class is defined in the tik module of thioterpackage. It populates drop down data from a collection data type, such is a tuple or a list as vales parameter.
+           <br>
+        ListBox:  Unlike ComboBox, this widget displays the entire collection of string items.The User can select one of multiple items.
+      </p>
+      <br>
+      <h2 align = "left">Example: Button</h2>
+      <p align = "left">
+        # import everything from tkinter module<br>
+from tkinter import *   <br>
+ 
+# create a tkinter window <br>
+root = Tk()            <br> 
+ 
+# Open window having dimension 100x100 <br>
+root.geometry('100x100') <br>
+ 
+# Create a Button <br>
+btn = Button(root, text = 'Click me !', bd = '5',
+                          command = root.destroy) <br>
+ 
+# Set the position of button on the top of window.   <br>
+btn.pack(side = 'top')   <br>
+ 
+root.mainloop() <br>
+      </p>
+      <br>
+      <iframe src="https://trinket.io/embed/python3/b1fba6b2a0" width="95%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+    <img src="../static/images/kjm.png" alt="kjm" width="500" height="400" style="transform: translate(1000px,-150px);">
+    </body>
+</html>
