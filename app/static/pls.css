@@ -254,6 +254,9 @@ label #cancel{
 }
 
 .Con{
-  transform: translate(600px,100px);
+  text-align: center;
   color: white;
+}
+.Con table{
+  transform: translateX(30vw);
 }
