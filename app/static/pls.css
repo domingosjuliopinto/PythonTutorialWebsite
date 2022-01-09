@@ -113,11 +113,11 @@ label #cancel{
 }
 
 .hrow .img1 img{
-  transform: translateX(980px);
+  transform: translateX(67vw);
 }
 
 .hrow .img2 img{
-  transform: translate(500px,-73px);
+  transform: translate(27vw,-73px);
 }
 
 .Begin{
