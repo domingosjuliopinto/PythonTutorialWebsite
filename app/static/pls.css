@@ -134,7 +134,6 @@ label #cancel{
     font-size: 25px;
     color: white;
     padding: 6px 12px;
-    transform: translate(250px,-120px);
 }
 
 .Begin img{
@@ -153,15 +152,6 @@ label #cancel{
 .Begin p{
   color:aqua;
   font-size: 22px;
-}
-
-.Begin .BP p{
-  text-align: right;
-  transform: translate(-400px, -180px);
-}
-
-.Begin .BP button{
-  transform: translate(1220px,-240px);
 }
 
 .Intermediate{
@@ -199,15 +189,6 @@ label #cancel{
   font-size: 22px;
 }
 
-.Intermediate .IP p{
-  text-align: right;
-  transform: translate(-400px, -180px);
-}
-
-.Intermediate .IP button{
-  transform: translate(1220px,-240px);
-}
-
 .Advance{
     width: 99%;
     height: 210px;
@@ -242,11 +223,6 @@ label #cancel{
 .Advance p{
   color:aqua;
   font-size: 22px;
-}
-
-.Advance .AP p{
-  text-align: right;
-  transform: translate(-400px, -260px);
 }
 
 .Advance .AP button{
