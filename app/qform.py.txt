@@ -7,7 +7,7 @@ from email.message import EmailMessage
 from email.mime.text import MIMEText
 
 class QuizForm(forms.Form):
-    email = forms.EmailField(max_length=30)
+    email = forms.EmailField(max_length=50)
     q1 = forms.CharField(max_length=20 , help_text="Which GUI was explained in detailed?")
     q2 = forms.CharField(max_length=20 , help_text="z=5 followed by z='JOHN' , what will be stored in z?")
     q3 = forms.CharField(max_length=20 , help_text="[ ] creates what?")

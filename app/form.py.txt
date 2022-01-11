@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 class ContactForm(forms.Form):
     first_name = forms.CharField(max_length=15)
     last_name = forms.CharField(max_length=15)
-    email = forms.EmailField(max_length=30)
+    email = forms.EmailField(max_length=50)
     level = forms.CharField(max_length=15)
     msg_type = forms.CharField(max_length=15)
     message = forms.CharField(
@@ -34,8 +34,8 @@ class ContactForm(forms.Form):
             )
 
             cur=connection.cursor()
-            s="insert into contact(f_name, l_name, contact_no, email_id, level, msg_type, msg) values ('%s','%s','%s','%s','%s','%s','%s')"
-            args=(first_name,last_name,contact_no,email,level,msg_type,message)
+            s="insert into contact(f_name, l_name, email_id, level, msg_type, msg) values ('%s','%s','%s','%s','%s','%s')"
+            args=(first_name,last_name,email,level,msg_type,message)
             cur.execute(s%args)        
             connection.commit()
             connection.close()
