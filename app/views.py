@@ -19,7 +19,7 @@ def login_user(request):
         if user is not None:
             print("Authenticated")
             login(request, user)
-            return render(request, 'homepage.html')
+            return redirect('home')
         else:
             print("not authenticated")
             return render(request, 'app/index.html')

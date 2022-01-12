@@ -4,13 +4,13 @@ This is a python tutorial website made by using django for sem 4 python mini pro
 ## Notes
 First and most important; The rights of the pictures used belong to the people who own them. These pictures are just used for educational purpose only (hence the folder name was exp11pp). Besides we are not hosting this django project 
 
-<a href="https://www.cleanpng.com/png-madagascar-penguins-png-50927/"> kolwos.png</a>
-<a href="https://www.cleanpng.com/png-julien-mort-madagascar-lemur-dreamworks-cute-squir-82094/">mort.png</a>
-<a href="https://www.cleanpng.com/png-the-all-hail-king-julien-show-madagascar-dreamwork-909668/">kjm.png</a>
-<a href="https://www.cleanpng.com/png-julien-lemur-madagascar-film-dreamworks-animation-1219112/">kj3.png</a>
-<a href="https://www.cleanpng.com/png-julien-lemurs-mort-madagascar-ring-tailed-lemur-ma-4018067/">kj1.png</a>
-<a href="https://www.cleanpng.com/png-julien-madagascar-lemur-youtube-animation-2081942/">kj4.png</a>
-<a href="https://www.cleanpng.com/png-julien-lemur-madagascar-animation-character-lilo-782552/">maurice.png</a>
+<a href="https://www.cleanpng.com/png-madagascar-penguins-png-50927/"> kolwos.png</a><br>
+<a href="https://www.cleanpng.com/png-julien-mort-madagascar-lemur-dreamworks-cute-squir-82094/">mort.png</a><br>
+<a href="https://www.cleanpng.com/png-the-all-hail-king-julien-show-madagascar-dreamwork-909668/">kjm.png</a><br>
+<a href="https://www.cleanpng.com/png-julien-lemur-madagascar-film-dreamworks-animation-1219112/">kj3.png</a><br>
+<a href="https://www.cleanpng.com/png-julien-lemurs-mort-madagascar-ring-tailed-lemur-ma-4018067/">kj1.png</a><br>
+<a href="https://www.cleanpng.com/png-julien-madagascar-lemur-youtube-animation-2081942/">kj4.png</a><br>
+<a href="https://www.cleanpng.com/png-julien-lemur-madagascar-animation-character-lilo-782552/">maurice.png</a><br>
 <a href="https://images.app.goo.gl/XrgMYDo3NPcKysUd8">kj2.png</a>
 
 ## Requirements
