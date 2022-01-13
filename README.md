@@ -16,9 +16,11 @@ First and most important; The rights of the pictures used belong to the people w
 ## Requirements
 1. A db.sqlite3 is required so follow the steps <a href="https://www.delftstack.com/howto/django/django-reset-database/">mentioned here</a>
 2. Download Xampp, create a db after starting apache and mysql and then run the two python codes in create_table folder
-3. Convert form.py.txt and qform.py.txt into form.py and qform.py, which are in the app folder, and follow the instructions in them
-4. domin is the default username and 123456 is the password , to create another superuser <a href="https://docs.djangoproject.com/en/1.8/intro/tutorial02/">See here</a>
-5. Convert settings.py.text into settings.py, which is in the exp11pp folder, and follow the instruction on line 23
+3. Download the requirements using : pip install -r requirements.txt
+4. Create a Gmail Application Specific Password using <a href="https://www.lifewire.com/get-a-password-to-access-gmail-by-pop-imap-2-1171882">the following steps</a>
+5. Convert form.py.txt and qform.py.txt into form.py and qform.py, which are in the app folder, and follow the instructions in them
+6. domin is the default username and 123456 is the password , to create another superuser <a href="https://docs.djangoproject.com/en/1.8/intro/tutorial02/">See here</a>
+7. Convert settings.py.text into settings.py, which is in the exp11pp folder, and follow the instruction on line 23
 
 ## Features 
 * This is a python tutorial website having King Julien of Madagascar as it's gimmick
@@ -38,3 +40,6 @@ First and most important; The rights of the pictures used belong to the people w
 4. The test is static i.e It has 5 questions only
 5. Low Level of Error Handling
 6. No Authentication for the link/API
+
+## Reference
+<a href="https://www.youtube.com/watch?v=V0O4pY2xX10">Sidebar Menu</a>
