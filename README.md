@@ -18,6 +18,7 @@ First and most important; The rights of the pictures used belong to the people w
 2. Download Xampp, create a db after starting apache and mysql and then run the two python codes in create_table folder
 3. Convert form.py.txt and qform.py.txt into form.py and qform.py, which are in the app folder, and follow the instructions in them
 4. domin is the default username and 123456 is the password , to create another superuser <a href="https://docs.djangoproject.com/en/1.8/intro/tutorial02/">See here</a>
+5. Convert settings.py.text into settings.py, which is in the exp11pp folder, and follow the instruction on line 23
 
 ## Features 
 * This is a python tutorial website having King Julien of Madagascar as it's gimmick
